@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-md-12">
+    <h3>Edit <%= capSingular %></h3>
+    <h4 class="bold">{{name}}</h4>
+    {{partial 'partials/common/<%= typePlural %>-form'}}
+    <button class="save btn btn-success btn-sm" type="submit" {{action 'save' this}}>Save</button>
+    <button class="cancel btn btn-sm" type="submit" {{action 'cancel' this}}>Cancel</button>
+  </div>
+</div>
+{{outlet}}

@@ -1,0 +1,8 @@
+<h3>{{#link-to '<%= typePlural %>.new'}}Create New <%= capSingular %>{{/link-to}}</h3>
+
+<ul class='items'>
+{{#each item in model}}
+  <li>{{#link-to '<%= typePlural %>.show' item}}{{item.name}}{{/link-to}}</li>
+{{/each}}
+<ul>
+{{outlet}}
